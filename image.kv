@@ -1,0 +1,40 @@
+###############          ##########        #######   #######        #########      #######       #
+#              #        #          #             #         #       #         #           #
+#               #       #          #            #         #        #         #          #        #
+#              #        #          #           #         #         #         #         #         #
+###############         ############          #         #          ###########        #          #
+#              #        #          #         #         #           #         #       #           #
+#               #       #          #        #         #            #         #      #            #
+#              #        #          #       #         #             #         #     #             #
+###############         #          #      #######    #######       #         #    #######        #
+
+# Developer: Mohammad Ali Bazzazi (me)
+
+########################### START ###########################
+<MyLayout>
+    # Add a box layout to screen
+    BoxLayout:
+        # Set the size of box layout to entire screen
+        size:(root.width, root.height)
+
+        # Set orientation to vertical
+        orientation:'vertical'
+
+        # Add padding
+        padding:20
+
+        # Add image to screen
+        Image:
+
+            # Write path of your image
+            source:"your picture path"
+
+            # if your image is smaller than screen size these two lines will 
+            # stretch your image to cover entire screen.
+            ##################################
+            # Allow to stretch image
+            allow_stretch:True
+            # Allow to change ratio of image
+            keep_ratio:False
+            ##################################
+########################### END ###########################
