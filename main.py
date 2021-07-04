@@ -27,7 +27,7 @@ class MyLayout(Widget):
 
 # Create main app class 
 class MyApp(App):
-    # Set background to White
+    # Set background color to White
     Window.clearcolor = (1, 1, 1, 1)
     def build(self):
         return MyLayout()
